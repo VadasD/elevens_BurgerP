@@ -51,7 +51,7 @@ public class Deck {
         }
 
     }
-}
+
 
 /**
  * Accesses the number of undealt cards in this deck.
@@ -80,12 +80,13 @@ public int size() {
 		/* *** TO BE IMPLEMENTED IN ACTIVITY 2 *** */
         // IS EMPTY if so return null
         size--;
-        if (size == 0);{
+        if (size == 0){
             return null;
         }else{
         Card c = cards.get(size);
         return c;
     }
+        }
 
 	/**
 	 * Generates and returns a string representation of this deck.

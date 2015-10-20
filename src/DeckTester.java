@@ -45,5 +45,6 @@ public class DeckTester {
                 suit[2]="Clubs";
                 suit[3]="Diamonds";
 		Deck testdeck = new Deck(rank,suit,pointvalue);
+                System.out.println(testdeck);
 	}
 }
