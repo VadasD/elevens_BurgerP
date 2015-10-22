@@ -57,6 +57,17 @@ public class Shuffler {
 	 * @param values is an array of integers simulating cards to be shuffled.
 	 */
 	public static void perfectShuffle(int[] values) {
+            int mid = (values.length/2);
+            int k = 0;
+            temp= new int[values.length];
+            for( ; k<mid; k++){
+                x+=2;
+            }
+            x=1;
+            for( ; k<values.length; k++){
+              x+=2;  
+            }
+            
 		/* *** TO BE IMPLEMENTED IN ACTIVITY 3 *** */
 	}
 
