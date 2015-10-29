@@ -68,8 +68,18 @@ public int size() {
 	 * and reset the size to represent the entire deck.
 	 */
 	public void shuffle() {
+            int r; 
+            Card temp;
+            for (int c = 0;c<size;c++){
+                r = (int)(Math.random()*size);
+                temp = cards.get(c);
+                cards.set(c,cards.get(r));
+                cards.set(r, temp);
+            }
+        }
+            
 		/* *** TO BE IMPLEMENTED IN ACTIVITY 4 *** */
-	}
+	
 
 	/**
 	 * Deals a card from this deck.
