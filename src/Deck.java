@@ -29,6 +29,7 @@ public class Deck {
      * @param values is an array containing all of the card point values.
      */
     public Deck(String[] ranks, String[] suits, int[] values) {
+        assert values.length == ranks.length : "length of values not same as rank";
         cards = new ArrayList<Card>();
         for (int j = 0; j < ranks.length; j++) {
             for (String suitString : suits) {
@@ -45,6 +46,7 @@ public class Deck {
      */
     public boolean isEmpty() {
         if (size == 0) {
+            assert this.size!=0: "the deck is not empty";
             return true;
         } else {
             return false;
@@ -93,6 +95,7 @@ public int size() {
         if (size == 0){
             return null;
         }else{
+            assert size>0:"deck is not empty";
         Card c = cards.get(size);
         return c;
     }
